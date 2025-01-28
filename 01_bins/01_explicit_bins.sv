@@ -6,16 +6,15 @@ module tb;
         option.per_instance = 1;
 
         coverpoint a{
-            bins bina = {[0:3]};
-
+            //bins bina = {[0:3]};
+            //bins bina[64] = {[0:127]};
+            bins bina[] = {[0:127]};
             //   bins zero = {0};
             //   bins one  = {1};
             //   bins two  = {2};
-            //   bins three = {3};
-                
+            //   bins three = {3};     
             //  bins bin0 = {0,1};  // {[0:1]}
             //  bins bin1 = {[2:3]}; // {2,3}
-
         }
     endgroup
 
