@@ -130,6 +130,14 @@ module tb;
 
  c ci = new();
 
+ initial begin
+    $dumpfile("dump.vcd");
+    $dumpvars;
+    #1200;
+    $finish();
+end
+endmodule
+
 
 
 
